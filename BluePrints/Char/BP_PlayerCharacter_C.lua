@@ -2575,7 +2575,7 @@ function BP_PlayerCharacter_C:AfterLoading()
   end
   local bIsImmersionMode = EMCache:Get("ImmersionModel")
   if bIsImmersionMode then
-    self:ImmersionModel()
+    EMCache:Set("ImmersionModel", false)
   end
   self:RefreshCharUIByPlatform()
   local Avatar = GWorld:GetAvatar()

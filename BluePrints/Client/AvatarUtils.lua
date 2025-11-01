@@ -1046,7 +1046,7 @@ function AvatarUtils:HandleActiveRandomCreator(RandomRuleId, ParamsNum, Proporti
   if 1 == ClientRes.RuleType then
     ClientRes.UnitId, ClientRes.Level, ClientRes.CurrentTableId = self:GetRandomRuleType_One(RandomRuleInfo)
   else
-    ClientRes.UnitId, ClientRes.Level, ClientRes.CurrentTableId = self:GetRandomRuleType_Two(RandomRuleInfo, ParamsNum, ProportionList or {})
+    ClientRes.UnitId, ClientRes.Level, ClientRes.CurrentTableId = self:GetRandomRuleType_Two(RandomRuleInfo, ParamsNum, ProportionList)
   end
   return true, ClientRes
 end
@@ -1071,16 +1071,20 @@ function AvatarUtils:GetRandomRuleType_Two(RandomRuleInfo, ParamsNum, Proportion
   local function GetRandomRes()
     local CurrentTableId = 1
     for Id, Num in pairs(UnitInfoWeight) do
-      if nil == ProportionList[Id] then
-        ProportionList[Id] = 0
+      if ProportionList[RandomRuleInfo.RandomId] == nil then
+        ProportionList[RandomRuleInfo.RandomId] = {}
       end
-      if ProportionList[Id] ~= math.floor(Num / WeightSum * Count) then
-        ProportionList[Id] = ProportionList[Id] + 1
+      if ProportionList[RandomRuleInfo.RandomId][Id] == nil then
+        ProportionList[RandomRuleInfo.RandomId][Id] = 0
+      end
+      if ProportionList[RandomRuleInfo.RandomId][Id] ~= math.floor(Num / WeightSum * Count) then
+        ProportionList[RandomRuleInfo.RandomId][Id] = ProportionList[RandomRuleInfo.RandomId][Id] + 1
         return Id, UnitLevel[Id], UnitIdToTableId[Id]
       end
       CurrentTableId = CurrentTableId + 1
       if CurrentTableId > MaxTableId then
-        return UnitIdList[CurrentTableId], UnitLevel[Id], math.random(1, MaxTableId)
+        CurrentTableId = math.random(1, MaxTableId)
+        return UnitIdList[CurrentTableId], UnitLevel[Id], CurrentTableId
       end
     end
   end

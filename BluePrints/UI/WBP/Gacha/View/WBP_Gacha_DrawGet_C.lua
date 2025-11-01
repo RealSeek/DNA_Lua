@@ -254,10 +254,9 @@ end
 
 function M:RefreshResourceBar()
   local ItemIdLst = {}
-  if DataMgr.SystemUI.GachaMain.TabCoin then
-    for key, value in ipairs(DataMgr.SystemUI.GachaMain.TabCoin) do
-      table.insert(ItemIdLst, value)
-    end
+  table.insert(ItemIdLst, 99)
+  if DataMgr.SkinGacha[self.GachaId].GachaType == GachaCommon.GachaType.NORMAL then
+    table.insert(ItemIdLst, 100)
   end
   for _, ResourceId in ipairs(DataMgr.SkinGacha[self.GachaId].GachaCostRes) do
     table.insert(ItemIdLst, ResourceId)

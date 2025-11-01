@@ -207,6 +207,8 @@ function Account:LoginResult(ret_code, info)
         GWorld.NetworkMgr:Disconnect()
         GWorld.NetworkMgr:LogoutEvent()
       end
+    elseif ret_code == ErrorCode.RET_LOGIN_AUTH_FAILED then
+      HeroUSDKSubsystem():HeroSDKLogout()
     elseif not bSimpleDisconnect then
       GWorld.NetworkMgr:DisconnectAndShowUI(info)
     end

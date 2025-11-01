@@ -457,10 +457,12 @@ function M:ShowItemDetail()
   local ItemData = DataMgr[ItemType][TypeId]
   local CommonPopupUIID
   if "Reward" == ItemType and (DataMgr.Reward[ItemData.RewardId].Mode == "Fixed" or DataMgr.Reward[ItemData.RewardId].Mode == "Once") then
-    if 0 == RemainTimes then
-      CommonPopupUIID = 100040
+    if 1 == self.ShopItemData.Bg then
+      UIManager(self):LoadUINew("PayGiftPopup_Yellow", self.ShopItemData, self)
+    elseif 2 == self.ShopItemData.Bg then
+      UIManager(self):LoadUINew("PayGiftPopup_Purple", self.ShopItemData, self)
     else
-      CommonPopupUIID = 100039
+      UIManager(self):LoadUINew("PayGiftPopup_Purple", self.ShopItemData, self)
     end
   elseif 0 == RemainTimes then
     CommonPopupUIID = 100042

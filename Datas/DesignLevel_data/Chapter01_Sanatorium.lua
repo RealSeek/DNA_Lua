@@ -20,6 +20,11 @@ return {
       UnitType = "Mechanism",
       UnitId = 1
     },
+    ["1200091"] = {
+      CreatorId = 1200091,
+      UnitType = "Npc",
+      UnitId = 200049
+    },
     ["1200096"] = {
       CreatorId = 1200096,
       UnitType = "Npc",

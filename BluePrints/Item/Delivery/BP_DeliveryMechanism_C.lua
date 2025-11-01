@@ -29,6 +29,9 @@ function BP_DeliveryMechanism_C:OnActorReady(Info)
 end
 
 function BP_DeliveryMechanism_C:OpenMechanism(PlayerActorEid)
+  if not self.InitSuccess then
+    return
+  end
   if not self:HandleLevelDeliver() then
     return
   end

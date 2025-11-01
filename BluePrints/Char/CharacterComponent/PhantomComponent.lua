@@ -31,6 +31,9 @@ function Component:ShowPhantomSummonMax()
 end
 
 function Component:CreatePhantom(RoleId, BTIndex, Info, ExtraInfo, Level)
+  if not RoleId then
+    return
+  end
   local IsHostage = false
   local ExtraCreateInfo = BattleUtils.GetExtraCreateInfo("Phantom", RoleId, RoleId)
   if ExtraCreateInfo then

@@ -167,6 +167,9 @@ function M:OnNewCharAccessoryObtained(AccessoryId)
 end
 
 function M:OnNewAccessoryObtained(AccessoryId)
+  if not self.Map_AccessoryContents then
+    return
+  end
   local Content = self.Map_AccessoryContents[AccessoryId]
   if not Content then
     return

@@ -46,7 +46,7 @@ function ClientEventUtils:CheckWhenNodeClear(SpecialQuestId)
   if SpecialEvent then
     local Ans = SpecialEvent:CheckWhenNodeClear()
     if Ans then
-      self:ClearSpecailQuestEvent()
+      self:ClearSpecailQuestEvent(SpecialQuestId)
     end
   end
 end

@@ -160,7 +160,6 @@ return {
   GuideBookFinishSomethingInt = 55112,
   GuideBookFinishSomethingStr = 66198,
   GuideBookGetReward = 85923,
-  HandleNetworkError_ConnectTimeout = 25685,
   HandleQuestChainDoing = 54215,
   HandleQuestChainDoing_QuestComplete = 65201,
   ImpressionAddByEnumId_New = 73405,

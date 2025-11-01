@@ -151,6 +151,7 @@ function WBP_Bag_Detail_View_C:RefreshDetailInfo(StuffServerData, StuffConfigDat
   else
     self.Star:SetVisibility(UE4.ESlateVisibility.Collapsed)
   end
+  self.Panel_Fish:SetVisibility(UE4.ESlateVisibility.Collapsed)
   if type(self["RefreshInfoWith" .. self.StuffType]) == "function" then
     self["RefreshInfoWith" .. self.StuffType](self, PlayerAvatar, StuffServerData, StuffConfigData)
   else
@@ -342,7 +343,6 @@ function WBP_Bag_Detail_View_C:RefreshInfoWithResource(PlayerAvatar, StuffServer
     self.Panel_Fish:SetVisibility(UE4.ESlateVisibility.SelfHitTestInvisible)
   else
     self.Text_Hold02:SetText(Utils.FormatNumber(StuffServerData.Count, true))
-    self.Panel_Fish:SetVisibility(UE4.ESlateVisibility.Collapsed)
   end
   self.Swtich02:SetActiveWidgetIndex(1)
   if StuffConfigData.DetailDes ~= nil then

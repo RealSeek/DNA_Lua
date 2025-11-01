@@ -194,7 +194,6 @@ return ReadOnly("ShopItem", {
     TypeNum = 1
   },
   [120203] = {
-    EndTime = 1672632000,
     IsSpPopup = 1,
     ItemId = 120203,
     ItemType = "CharAccessory",

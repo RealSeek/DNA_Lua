@@ -40,8 +40,8 @@ function Component:OnRequestEnterOnline(online_type, ret, others)
   if ret ~= ErrorCode.RET_SUCCESS then
     return
   end
-  self:NotifyCharacterStartSync()
   self.IsInRegionOnline = true
+  self:NotifyCharacterStartSync()
   self.RegionAvatars = others
   self.CurrentOnlineType = online_type
   if not others then
@@ -70,8 +70,8 @@ function Component:OnRequestLeaveOnline(online_type, ret)
   if ret ~= ErrorCode.RET_SUCCESS then
     return
   end
-  self:NotifyCharacterEndSync()
   self.IsInRegionOnline = false
+  self:NotifyCharacterEndSync()
   self.RegionAvatars = {}
   self.CurrentOnlineType = -1
   self:DestoryAllOthers()

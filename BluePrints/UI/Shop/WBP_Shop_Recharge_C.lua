@@ -1,9 +1,11 @@
 require("UnLua")
 local M = Class({
-  "BluePrints.UI.BP_EMUserWidget_C"
+  "BluePrints.UI.BP_EMUserWidget_C",
+  "BluePrints.UI.BP_EMUserWidgetUtils_C"
 })
 
 function M:Construct()
+  self:AddInputMethodChangedListen()
   self:PlayAnimation(self.In)
   if ShopUtils:GetSDKRegisterRegionCode() == "JP" then
     self.Group_JPRecharge:SetVisibility(ESlateVisibility.Visible)
@@ -33,6 +35,12 @@ end
 
 function M:OpenJPUrl()
   UE4.UKismetSystemLibrary.LaunchURL(self.JumPUrl)
+end
+
+function M:OnUpdateUIStyleByInputTypeChange(CurInputDevice, CurGamepadName)
+  if CurInputDevice == ECommonInputType.Gamepad then
+    self:SetFocus()
+  end
 end
 
 return M

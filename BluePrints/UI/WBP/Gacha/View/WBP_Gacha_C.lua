@@ -263,10 +263,9 @@ function M:RefreshGachaResInfo()
     return
   end
   local TabCoinInfo = {}
-  if DataMgr.SystemUI.GachaMain.TabCoin then
-    for key, value in ipairs(DataMgr.SystemUI.GachaMain.TabCoin) do
-      table.insert(TabCoinInfo, value)
-    end
+  table.insert(TabCoinInfo, 99)
+  if GachaData.GachaType == GachaCommon.GachaType.NORMAL then
+    table.insert(TabCoinInfo, 100)
   end
   for _, ResourceId in ipairs(GachaData.GachaCostRes) do
     table.insert(TabCoinInfo, ResourceId)

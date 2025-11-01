@@ -44,6 +44,7 @@ function M:InitUIInfo(Name, IsInUIMode, EventList, ...)
   end
   self:SetPanelGuideText(-1, false, false, true)
   self.AutoClose = false
+  self.TabNewAnswerId, self.TabNewQuestionId = nil, nil
 end
 
 function M:BindEvents()
@@ -97,6 +98,7 @@ function M:InitQuestion()
     local DetectiveAnswerData = DataMgr.DetectiveAnswer[self.TabNewAnswerId]
     if DetectiveAnswerData then
       needAddQuestionId = DetectiveAnswerData.QuestionID
+      self.CurerntQuestionId = needAddQuestionId
     end
   end
   if needAddQuestionId and self.DetectiveGameCurrentQuestions[needAddQuestionId] == nil then

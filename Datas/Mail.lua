@@ -432,26 +432,6 @@ return ReadOnly("Mail", {
     MailTimeLimit = -1,
     MailTitle = "Mail_Title_19101"
   },
-  [19108] = {
-    Condition = 4100,
-    MailContent = "Mail_Content_19101",
-    MailId = 19108,
-    MailReward = 79021,
-    MailSenderId = 900003,
-    MailTimeLimit = -1,
-    MailTitle = "Mail_Title_19101",
-    Provider = "cloud"
-  },
-  [19109] = {
-    Condition = 4100,
-    MailContent = "Mail_Content_19101",
-    MailId = 19109,
-    MailReward = 79021,
-    MailSenderId = 900003,
-    MailTimeLimit = -1,
-    MailTitle = "Mail_Title_19101",
-    Provider = "oppo"
-  },
   [100301] = {
     MailContent = "Mail_Content_100301",
     MailId = 100301,

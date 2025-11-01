@@ -79,6 +79,8 @@ function Component:PackSyncInfo(MoveInfo, MainPlayer)
   if MainPlayer then
     MainPlayer:CanPlayerBeInterCandidate(self.Eid, ActorLoc)
   end
+  self.RegionCachedLocation = ActorLoc
+  self.RegionCachedRotation = ActorRot
   self:PackSyncInfo_Cpp(ActorLoc, ActorRot, CurVel, Acceleration, MovementMode, TimeStamp)
 end
 

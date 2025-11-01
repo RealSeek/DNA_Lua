@@ -7,9 +7,9 @@ T.RT_5 = {101401}
 T.RT_6 = {103201}
 T.RT_7 = {101402}
 T.RT_8 = {101901}
-T.RT_9 = {101101}
-T.RT_10 = {101105}
-T.RT_11 = {101103}
+T.RT_9 = {101103}
+T.RT_10 = {101101}
+T.RT_11 = {101105}
 local ReadOnly = (DataMgr or {}).ReadOnly or function(n, x)
   return x
 end
@@ -164,7 +164,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 120,
     StoryPath = "SpecialQuest\d2\\TraceEnlike.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 120
   },
@@ -631,8 +631,8 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1054,
     StoryPath = "SpecialQuest\\Side\\200103_Pet01Battle01.story",
+    SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
-    TriggerBoxStaticCreatorId = 1240985,
     UniversalConfigId = 1054
   },
   [1055] = {
@@ -671,7 +671,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2051,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Home.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2051
   },
@@ -681,7 +681,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2052,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Walk.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2052
   },
@@ -691,7 +691,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2053,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Catch01.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2053
   },
@@ -701,7 +701,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2054,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Catch02.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2054
   },
@@ -711,7 +711,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2055,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Catch03.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2055
   },
@@ -721,7 +721,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2056,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Back.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2056
   },
@@ -731,7 +731,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2057,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay01Sleep.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2057
   },
@@ -741,7 +741,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2058,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Home.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2058
   },
@@ -751,7 +751,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2059,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Walk.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2059
   },
@@ -761,7 +761,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2060,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Survey01.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2060
   },
@@ -771,7 +771,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2061,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Survey02.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2061
   },
@@ -781,7 +781,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2062,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Back01.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2062
   },
@@ -791,7 +791,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2063,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay02Back02.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2063
   },
@@ -801,7 +801,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2064,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay03Home.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2064
   },
@@ -811,7 +811,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2065,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay03Walk.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2065
   },
@@ -821,7 +821,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2066,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay03Catch.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2066
   },
@@ -831,7 +831,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2067,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay03HomeBook.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2067
   },
@@ -841,7 +841,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2070,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Home.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2070
   },
@@ -851,7 +851,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2071,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Walk01.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2071
   },
@@ -861,7 +861,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2072,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Walk02.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2072
   },
@@ -871,7 +871,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2073,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04HomeCry.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2073
   },
@@ -881,7 +881,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2074,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Find01.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2074
   },
@@ -891,7 +891,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2075,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Find02.story",
-    SubRegionIds = T.RT_11,
+    SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
     UniversalConfigId = 2075
   },
@@ -901,7 +901,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2076,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Thief.story",
-    SubRegionIds = T.RT_11,
+    SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
     UniversalConfigId = 2076
   },
@@ -911,7 +911,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2077,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Fight.story",
-    SubRegionIds = T.RT_11,
+    SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
     UniversalConfigId = 2077
   },
@@ -921,7 +921,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2078,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04BackCity01.story",
-    SubRegionIds = T.RT_11,
+    SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
     UniversalConfigId = 2078
   },
@@ -931,7 +931,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2079,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04BackCity02.story",
-    SubRegionIds = T.RT_9,
+    SubRegionIds = T.RT_10,
     TalkTriggerId = 1001,
     UniversalConfigId = 2079
   },
@@ -941,7 +941,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2080,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04Back.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2080
   },
@@ -951,7 +951,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2081,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04HomeParty.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2081
   },
@@ -961,7 +961,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 2082,
     StoryPath = "SpecialQuest\\ActiveFina\\FeinaDay04StoryEnd.story",
-    SubRegionIds = T.RT_10,
+    SubRegionIds = T.RT_11,
     TalkTriggerId = 1001,
     UniversalConfigId = 2082
   },

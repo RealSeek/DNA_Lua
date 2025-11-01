@@ -1007,9 +1007,14 @@ function RegionDataMgrSubsystem_C:UpdatePhantomRegionData(Actor)
     return
   end
   local WorldLoader = GameMode:GetLevelLoader()
+  local SubRegionId = -1
   if WorldLoader then
-    Actor.SubRegionId = WorldLoader:GetRegionIdByLocation(Actor:k2_GetActorLocation())
+    SubRegionId = WorldLoader:GetRegionIdByLocation(Actor:k2_GetActorLocation())
   end
+  if -1 == SubRegionId then
+    return
+  end
+  Actor.SubRegionId = SubRegionId
   self.DataPool:UpdateLevelNameAndSubRegionId(self:GetLuaDataIndex(Actor.WorldRegionEid), Actor)
   local Data = self:UpdateUnitRegionCacheDataByActor(Actor)
   self.DataLibrary.LogHelper:OnClientCacheUpdated(Actor.WorldRegionEid, Actor.Eid, Actor.LevelName)

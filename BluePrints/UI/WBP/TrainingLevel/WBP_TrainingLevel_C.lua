@@ -17,6 +17,11 @@ function M:InitUI()
   if IsValid(self.GameInputModeSubsystem) then
     self:UpdateUIByInputDevice(self.GameInputModeSubsystem:GetCurrentInputType())
   end
+  self.TrainingLevel_RewardBtn.Key_GetAll:CreateCommonKey({
+    KeyInfoList = {
+      {Type = "Img", ImgShortPath = "A"}
+    }
+  })
   self.IsGettingRewards = false
 end
 
